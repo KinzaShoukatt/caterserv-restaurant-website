@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Playball";
+  src: url("assets//fonts/Playball/Playball-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.playball {
+  font-family: "Playball";
+}
