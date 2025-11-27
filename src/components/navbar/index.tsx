@@ -6,7 +6,7 @@ const Navbar = () => {
   const [dropDown, setDropDown] = useState(false);
   return (
     <>
-      <div className="bg-[#FFFCF8] flex justify-between px-25 py-6 items-center border-b border-[#9A9A9A]">
+      <div className="bg-[#FFFCF8] flex justify-between px-25 py-6 items-center border-b border-[#e9e4e4]">
         <div>
           <p className="playball font-bold text-[40px] text-[#D4A762] cursor-pointer">
             Cater<span className="text-black">Serv</span>
