@@ -1,5 +1,7 @@
 import HomeImage from "../../assets/images/imgi_1_hero.png";
 import About from "../about";
+import Events from "../eventspage";
+import Services from "../servicesPage";
 const Home = () => {
   return (
     <>
@@ -28,6 +30,8 @@ const Home = () => {
         </div>
       </div>
       <About />
+      <Services />
+      <Events />
     </>
   );
 };

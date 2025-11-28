@@ -10,3 +10,7 @@
 .playball {
   font-family: "Playball";
 }
+
+.shadow {
+  box-shadow: "0 0 45px rgba(0, 0, 0, 0.08)";
+}
