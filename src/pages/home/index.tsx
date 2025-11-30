@@ -1,5 +1,6 @@
 import HomeImage from "../../assets/images/imgi_1_hero.png";
 import About from "../about";
+import BookUs from "../booking";
 import Events from "../eventspage";
 import Menu from "../menu";
 import Services from "../servicesPage";
@@ -34,6 +35,7 @@ const Home = () => {
       <Services />
       <Events />
       <Menu />
+      <BookUs />
     </>
   );
 };
