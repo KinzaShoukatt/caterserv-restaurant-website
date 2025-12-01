@@ -11,14 +11,24 @@ const About = () => {
     <>
       <div className="px-30 py-30">
         <div className="flex gap-9">
-          <div className="h-[70vh]">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="0"
+            className="h-[70vh]"
+          >
             <img
               className="h-full w-full object-cover rounded-lg"
               src={AboutImage}
               alt=""
             />
           </div>
-          <div className=" flex flex-col w-3/5">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="200"
+            className=" flex flex-col w-3/5"
+          >
             <div className="py-2.5">
               <button className="bg-[#FFFCF8] font-sans text-[#050709] text-[14px] font-bold border border-[#D4A762] py-1 px-7 rounded-2xl">
                 ABOUT US
@@ -52,7 +62,7 @@ const About = () => {
                 <p>Delicious Deals for Delicious Meals</p>
               </div>
             </div>
-            <div className="flex py-3 items-center mt-auto gap-1.5 bg-[#D4A762] px-8 rounded-3xl cursor-pointer hover:bg-black hover:text-[#D4A762] w-fit">
+            <div className="flex py-3 items-center mt-auto gap-1.5 bg-[#D4A762] px-8 rounded-3xl cursor-pointer transition-all duration-500 hover:bg-black hover:text-[#D4A762] w-fit">
               <button className=" text-lg font-semibold">About Us</button>
               <IoMdArrowRoundForward size={20} />
             </div>
@@ -60,20 +70,35 @@ const About = () => {
         </div>
         <div className="flex gap-9 items-center mt-30">
           <div className=" flex justify-between gap-5 w-3/5">
-            <div className="bg-[#D4A762] py-7 px-12 h-fit flex flex-col items-center rounded-xl">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="200"
+              className=" bg-[#D4A762] py-7 px-12 h-fit flex flex-col items-center rounded-xl"
+            >
               <FaUsers color="white" size={60} />
               <p className="playball text-5xl font-bold py-3.5">689</p>
               <p className="font-sans font-bold text-[#050709]">HAPPY</p>
               <p className="font-sans font-bold text-[#050709]">CUSTOMERS</p>
             </div>
-            <div className="bg-[#D4A762] py-7 px-12 h-fit flex flex-col items-center rounded-xl">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="400"
+              className="top-bottom bg-[#D4A762] py-7 px-12 h-fit flex flex-col items-center rounded-xl"
+            >
               <FaUsersCog color="white" size={60} />
               <p className="playball text-5xl font-bold py-3.5">107</p>
               <p className="font-sans font-bold text-[#050709] whitespace-nowrap">
                 EXPERT CHEFS
               </p>
             </div>
-            <div className="bg-[#D4A762] py-7 px-7 h-fit flex flex-col items-center rounded-xl">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="600"
+              className="top-bottom bg-[#D4A762] py-7 px-7 h-fit flex flex-col items-center rounded-xl"
+            >
               <FaCheck color="white" size={60} />
               <p className="playball text-5xl font-bold py-3.5">253</p>
               <p className="font-sans font-bold text-[#050709] whitespace-nowrap">
@@ -81,7 +106,12 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="h-[70vh]">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-delay="0"
+            className="top-bottom h-[70vh]"
+          >
             <img
               className="h-full w-full object-cover rounded-lg"
               src={AboutImageSec}

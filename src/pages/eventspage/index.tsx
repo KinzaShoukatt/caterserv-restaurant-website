@@ -12,7 +12,8 @@ import { useState } from "react";
 const Events = () => {
   const [selectedImage, setSelectedimage] = useState<string | null>(null);
   const [isModelOpen, setIsModelOpen] = useState(false);
-  const data = [
+  const [selectedEvent, setSelectedEvent] = useState("allEvents");
+  const allEvents = [
     {
       id: 1,
       img: FirstImage,
@@ -54,6 +55,57 @@ const Events = () => {
       text: "Corporate",
     },
   ];
+  const wedding = [
+    {
+      id: 1,
+      img: FirstImage,
+      text: "Wedding",
+    },
+    {
+      id: 2,
+      img: ThirdImage,
+      text: "Wedding",
+    },
+  ];
+  const corporate = [
+    {
+      id: 1,
+      img: SecondImage,
+      text: "Corporate",
+    },
+    {
+      id: 2,
+      img: EightImage,
+      text: "Corporate",
+    },
+  ];
+  const cocktail = [
+    {
+      id: 1,
+      img: FifthImage,
+      text: "Cocktail",
+    },
+  ];
+  const buffet = [
+    {
+      id: 1,
+      img: FourthImage,
+      text: "Buffet",
+    },
+    {
+      id: 2,
+      img: seventhImage,
+      text: "Buffet",
+    },
+  ];
+  const getEvents = () => {
+    if (selectedEvent === "allEvents") return allEvents;
+    if (selectedEvent === "wedding") return wedding;
+    if (selectedEvent === "corporate") return corporate;
+    if (selectedEvent === "cocktail") return cocktail;
+    if (selectedEvent === "buffet") return buffet;
+    return allEvents;
+  };
   return (
     <>
       <div className="px-25 py-25 flex flex-col justify-center">
@@ -65,25 +117,48 @@ const Events = () => {
             Our Social & Professional Events Gallery
           </p>
           <div className="flex gap-10 font-sans justify-center py-10">
-            <button className="bg-[#D4A762] border border-[#D4A762] py-2 px-9 rounded-4xl cursor-pointer">
+            <button
+              className={`border border-[#D4A762] py-2 px-9 rounded-4xl cursor-pointer ${
+                selectedEvent === "allEvents" ? "bg-[#D4A762]" : "bg-[#FFFCF8]"
+              }`}
+              onClick={() => setSelectedEvent("allEvents")}
+            >
               All Events
             </button>
-            <button className="bg-[#FFFCF8] border border-[#D4A762] py-2 px-9 rounded-4xl cursor-pointer">
+            <button
+              className={`border border-[#D4A762] py-2 px-9 rounded-4xl cursor-pointer ${
+                selectedEvent === "wedding" ? "bg-[#D4A762]" : "bg-[#FFFCF8]"
+              }`}
+              onClick={() => setSelectedEvent("wedding")}
+            >
               Wedding
             </button>
-            <button className="bg-[#FFFCF8] border border-[#D4A762] py-2 px-9 rounded-4xl cursor-pointer">
+            <button
+              className={`border border-[#D4A762] py-2 px-9 rounded-4xl cursor-pointer ${
+                selectedEvent === "corporate" ? "bg-[#D4A762]" : "bg-[#FFFCF8]"
+              }`}
+              onClick={() => setSelectedEvent("corporate")}
+            >
               Corporate
             </button>
-            <button className="bg-[#FFFCF8] border border-[#D4A762] py-2 px-9 rounded-4xl cursor-pointer">
+            <button
+              className={`border border-[#D4A762] py-2 px-9 rounded-4xl cursor-pointer ${
+                selectedEvent === "cocktail" ? "bg-[#D4A762]" : "bg-[#FFFCF8]"
+              }`}
+              onClick={() => setSelectedEvent("cocktail")}
+            >
               Cocktail
             </button>
-            <button className="bg-[#FFFCF8] border border-[#D4A762] py-2 px-9 rounded-4xl cursor-pointer">
+            <button
+              className="bg-[#FFFCF8] border border-[#D4A762] py-2 px-9 rounded-4xl cursor-pointer"
+              onClick={() => setSelectedEvent("buffet")}
+            >
               Buffet
             </button>
           </div>
         </div>
         <div className="p-5 grid grid-cols-4 gap-5 relative">
-          {data.map((card) => (
+          {getEvents().map((card) => (
             <div key={card.id}>
               <div className="relative group">
                 <img

@@ -131,7 +131,7 @@ const BookUs = () => {
               </div>
             </div>
             <div>
-              <button className="bg-[#D4A762] px-10 py-3.5 mt-5 font-semibold rounded-4xl cursor-pointer hover:bg-black hover:text-[#D4A762]">
+              <button className="bg-[#D4A762] px-10 py-3.5 mt-5 font-semibold rounded-4xl cursor-pointer transition-all duration-500 ease-in-out  hover:bg-black hover:text-[#D4A762]">
                 Submit Now
               </button>
             </div>
