@@ -33,13 +33,49 @@
   animation: slideOvershoot 1s ease-out forwards;
 }
 
-.top-bottom {
-  opacity: 0;
-  transform: translateY(-100%);
-  transition: transform 1s ease-out, opacity 1s ease-out;
-}
+@layer utilities {
+  @keyframes multiBounce {
+    0% {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+    25% {
+      opacity: 1;
+      transform: translateY(-15px); /* 1st up */
+    }
+    50% {
+      transform: translateY(10px); /* 1st down */
+    }
+    75% {
+      transform: translateY(-10px); /* 2nd up */
+    }
+    100% {
+      transform: translateY(0); /* final position */
+    }
+  }
 
-.top-bottom.aos-animate {
-  transform: translateY(0);
-  opacity: 1;
+  .animate-multiBounce {
+    animation-name: multiBounce;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: var(--tw-delay, 0ms);
+    animation-play-state: paused;
+  }
+
+  [data-aos].aos-animate.animate-multiBounce {
+    animation-play-state: running;
+  }
+  .animate-multiBounce1 {
+    animation-name: multiBounce;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: var(--tw-delay, 0ms);
+    animation-play-state: paused;
+  }
+
+  [data-aos].aos-animate.animate-multiBounce1 {
+    animation-play-state: running;
+  }
 }

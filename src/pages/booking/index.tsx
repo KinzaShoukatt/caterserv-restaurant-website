@@ -2,24 +2,28 @@
 import FirstImage from "../../assets/images/imgi_20_background-site.jpg";
 const BookUs = () => {
   return (
-    <div className="px-25 py-25">
-      <div className="flex justify-center w-full">
+    <div className="px-5 py-25 md:px-10 lg:px-25">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-delay="100"
+        className="animate-multiBounce flex justify-center w-full"
+      >
         <div className="w-1/10">
           <img
             className="w-full h-full object-cover rounded-tl-lg rounded-bl-lg"
             src={FirstImage}
-            alt=""
           />
         </div>
-        <div className="text-center bg-[#FFFCF8] py-12 px-5 w-8/10 border-t border-[#D4A762] border-b">
-          <button className="font-sans text-[#050709] text-[14px] font-bold border border-[#D4A762] py-1 px-7 rounded-2xl">
+        <div className="text-center bg-[#FFFCF8] py-12 px-2.5 w-8/10 border-t border-[#D4A762] border-b md:px-5">
+          <button className="font-sans text-[#050709] text-[14px] font-medium border border-[#D4A762] py-1 px-7 rounded-2xl lg:font-bold">
             BOOK US
           </button>
-          <p className="playball text-black text-5xl pt-6 ">
+          <p className="playball text-black text-3xl pt-6 md:text-4xl lg:text-5xl">
             Where you want Our Services
           </p>
           <form className="pt-10 ">
-            <div className="grid grid-cols-3 gap-5 py-2.5">
+            <div className="grid grid-cols-1 gap-5 py-2.5 md:grid-cols-2 lg:grid-cols-3">
               <div>
                 <select
                   name="country"
@@ -59,8 +63,6 @@ const BookUs = () => {
                   <option value="india">India</option>
                 </select>
               </div>
-            </div>
-            <div className="grid grid-cols-3 gap-5 py-2.5">
               <div>
                 <select
                   name="country"
@@ -104,8 +106,6 @@ const BookUs = () => {
                   <option value="non">Non Vegetarian</option>
                 </select>
               </div>
-            </div>
-            <div className="grid grid-cols-3 gap-5 py-2.5">
               <div>
                 <input
                   type="text"

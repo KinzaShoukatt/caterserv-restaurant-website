@@ -6,17 +6,27 @@ import FourthImage from "../../assets/images/imgi_24_team-4.jpg";
 const Team = () => {
   return (
     <>
-      <div className="p-25 flex flex-col justify-center">
-        <div className="text-center">
-          <button className="bg-[#FFFCF8] font-sans text-[#050709] text-[14px] font-bold border border-[#D4A762] py-1 px-7 rounded-2xl">
+      <div className="p-5 flex flex-col justify-center md:px-10 lg:px-25">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-delay="0"
+          className="animate-multiBounce text-center"
+        >
+          <button className="bg-[#FFFCF8] font-sans text-[#050709] text-[14px] font-medium border border-[#D4A762] py-1 px-7 rounded-2xl lg:font-bold">
             OUR TEAM
           </button>
-          <p className="playball text-black text-5xl pt-6 pb-10">
+          <p className="playball text-black text-3xl pt-6 pb-10 md:text-4xl lg:text-5xl">
             We have experienced chef Team
           </p>
         </div>
-        <div className="flex gap-5">
-          <div className="relative group">
+        <div className="grid grid-col-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="200"
+            className="relative group"
+          >
             <img
               className="rounded-tl-lg rounded-tr-lg"
               src={FirstImage}
@@ -45,7 +55,12 @@ const Team = () => {
               <p className="text-white">Decoration Chef</p>
             </div>
           </div>
-          <div className="relative group">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="400"
+            className="relative group"
+          >
             <img
               className="rounded-tl-lg rounded-tr-lg"
               src={SecondImage}
@@ -74,7 +89,12 @@ const Team = () => {
               <p className="text-white">Executive Chef</p>
             </div>
           </div>
-          <div className="relative group">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="600"
+            className="relative group"
+          >
             <img
               className="rounded-tl-lg rounded-tr-lg"
               src={ThirdImage}
@@ -103,7 +123,12 @@ const Team = () => {
               <p className="text-white">Kitchen Porter</p>
             </div>
           </div>
-          <div className="relative group">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="800"
+            className="relative group"
+          >
             <img
               className="rounded-tl-lg rounded-tr-lg"
               src={FourthImage}

@@ -9,8 +9,7 @@ import Navbar from "./components/navbar";
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1400, // animation duration in ms — customize as you like
-      once: true, // whether animation should happen only once
+      once: false, // whether animation should happen only once
       // other AOS config...
     });
   }, []);

@@ -108,15 +108,20 @@ const Events = () => {
   };
   return (
     <>
-      <div className="px-25 py-25 flex flex-col justify-center">
-        <div className="text-center">
-          <button className="bg-[#FFFCF8] font-sans text-[#050709] text-[14px] font-bold border border-[#D4A762] py-1 px-7 rounded-2xl">
+      <div className="px-5 py-25 flex flex-col justify-center md:px-10 lg:px-25">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-delay="0"
+          className="animate-multiBounce text-center"
+        >
+          <button className="bg-[#FFFCF8] font-sans text-[#050709] text-[14px] font-medium border border-[#D4A762] py-1 px-7 rounded-2xl lg:font-bold">
             LATEST EVENTS
           </button>
-          <p className="playball text-black text-5xl py-7">
+          <p className="playball text-black text-3xl pt-7 md:text-4xl lg:text-5xl">
             Our Social & Professional Events Gallery
           </p>
-          <div className="flex gap-10 font-sans justify-center py-10">
+          <div className="grid grid-cols-1 w-fit gap-4 font-sans mx-auto justify-center items-center text-center py-10 md:grid-cols-3 lg:grid-cols-5">
             <button
               className={`border border-[#D4A762] py-2 px-9 rounded-4xl cursor-pointer ${
                 selectedEvent === "allEvents" ? "bg-[#D4A762]" : "bg-[#FFFCF8]"
@@ -157,9 +162,14 @@ const Events = () => {
             </button>
           </div>
         </div>
-        <div className="p-5 grid grid-cols-4 gap-5 relative">
-          {getEvents().map((card) => (
-            <div key={card.id}>
+        <div className="grid grid-cols-1 gap-5 relative md:grid-cols-2 lg:grid-cols-4 lg:p-5">
+          {getEvents().map((card, i) => (
+            <div
+              key={card.id}
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-delay={200 * (i + 1)}
+            >
               <div className="relative group">
                 <img
                   className="rounded-lg w-full h-full object-cover"
@@ -184,7 +194,12 @@ const Events = () => {
           {isModelOpen && (
             <>
               <div className="fixed inset-0 bg-black/60 z-40"></div>
-              <div className="absolute inset-0 flex flex-col justify-center items-center z-50">
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="900"
+                data-aos-delay="100"
+                className="absolute inset-0 flex flex-col justify-center items-center z-50"
+              >
                 <div className="flex flex-col h-[80vh] w-fit border-3 border-white rounded-sm">
                   <img className="h-full w-full" src={selectedImage || ""} />
                   <img

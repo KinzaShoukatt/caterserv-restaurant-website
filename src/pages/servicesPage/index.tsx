@@ -3,16 +3,26 @@
 const Services = () => {
   return (
     <>
-      <div className="px-25 py-10 flex flex-col justify-center">
-        <div className="text-center">
-          <button className="bg-[#FFFCF8] font-sans text-[#050709] text-[14px] font-bold border border-[#D4A762] py-1 px-7 rounded-2xl">
+      <div className="px-5 py-10 flex flex-col justify-center md:px-10 lg:px-25">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="900"
+          className="animate-multiBounce text-center"
+        >
+          <button className="bg-[#FFFCF8] font-sans text-[#050709] text-[14px] font-medium border border-[#D4A762] py-1 px-7 rounded-2xl lg:font-bold">
             OUR SERVICES
           </button>
-          <p className="playball text-black text-5xl py-5">What We Offer</p>
+          <p className="playball text-black text-3xl md:text-5xl py-5">
+            What We Offer
+          </p>
         </div>
-        <div className="p-5 grid grid-cols-4 gap-5">
-          <div className="relative overflow-hidden group font-sans text-center py-10 px-2.5 rounded-xl shadow">
-            {/* TOP → BOTTOM animated background */}
+        <div className="py-5 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:p-5">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="200"
+            className="relative overflow-hidden group font-sans text-center py-10 px-2.5 rounded-xl shadow"
+          >
             <div className=" absolute inset-0 bg-[#D4A762] -translate-y-full group-hover:translate-y-0 transition-all duration-900 z-0"></div>
             <div className="absolute inset-0 bg-[#FFFCF8] z-[-1]"></div>
             <div className="relative z-10">
@@ -28,7 +38,12 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div className="relative overflow-hidden group font-sans text-center py-10 px-2.5 rounded-xl shadow">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="400"
+            className="relative overflow-hidden group font-sans text-center py-10 px-2.5 rounded-xl shadow"
+          >
             <div className=" absolute inset-0 bg-[#D4A762] -translate-y-full group-hover:translate-y-0 transition-all duration-900 z-0"></div>
             <div className="absolute inset-0 bg-[#FFFCF8] z-[-1]"></div>
             <div className="relative z-10">
@@ -44,7 +59,12 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div className="relative overflow-hidden group font-sans text-center py-10 px-2.5 rounded-xl shadow">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="600"
+            className="relative overflow-hidden group font-sans text-center py-10 px-2.5 rounded-xl shadow"
+          >
             <div className=" absolute inset-0 bg-[#D4A762] -translate-y-full group-hover:translate-y-0 transition-all duration-900 z-0"></div>
             <div className="absolute inset-0 bg-[#FFFCF8] z-[-1]"></div>
             <div className="relative z-10">
@@ -60,7 +80,12 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div className="relative overflow-hidden group font-sans text-center py-10 px-2.5 rounded-xl shadow">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="800"
+            className="relative overflow-hidden group font-sans text-center py-10 px-2.5 rounded-xl shadow"
+          >
             <div className=" absolute inset-0 bg-[#D4A762] -translate-y-full group-hover:translate-y-0 transition-all duration-900 z-0"></div>
             <div className="absolute inset-0 bg-[#FFFCF8] z-[-1]"></div>
             <div className="relative z-10">
@@ -76,7 +101,13 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div className="relative overflow-hidden group font-sans text-center py-10 px-2.5 rounded-xl shadow">
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="1000"
+            className="relative overflow-hidden group font-sans text-center py-10 px-2.5 rounded-xl shadow"
+          >
             <div className=" absolute inset-0 bg-[#D4A762] -translate-y-full group-hover:translate-y-0 transition-all duration-900 z-0"></div>
             <div className="absolute inset-0 bg-[#FFFCF8] z-[-1]"></div>
             <div className="relative z-10">
@@ -92,7 +123,12 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div className="relative overflow-hidden group font-sans text-center py-10 px-2.5 rounded-xl shadow">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="1200"
+            className="relative overflow-hidden group font-sans text-center py-10 px-2.5 rounded-xl shadow"
+          >
             <div className=" absolute inset-0 bg-[#D4A762] -translate-y-full group-hover:translate-y-0 transition-all duration-900 z-0"></div>
             <div className="absolute inset-0 bg-[#FFFCF8] z-[-1]"></div>
             <div className="relative z-10">
@@ -108,7 +144,12 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div className="relative overflow-hidden group font-sans text-center py-10 px-2.5 rounded-xl shadow">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="1400"
+            className="relative overflow-hidden group font-sans text-center py-10 px-2.5 rounded-xl shadow"
+          >
             <div className=" absolute inset-0 bg-[#D4A762] -translate-y-full group-hover:translate-y-0 transition-all duration-900 z-0"></div>
             <div className="absolute inset-0 bg-[#FFFCF8] z-[-1]"></div>
             <div className="relative z-10">
@@ -124,7 +165,12 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div className="relative overflow-hidden group font-sans text-center py-10 px-2.5 rounded-xl shadow">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="1600"
+            className="relative overflow-hidden group font-sans text-center py-10 px-2.5 rounded-xl shadow"
+          >
             <div className=" absolute inset-0 bg-[#D4A762] -translate-y-full group-hover:translate-y-0 transition-all duration-900 z-0"></div>
             <div className="absolute inset-0 bg-[#FFFCF8] z-[-1]"></div>
             <div className="relative z-10">

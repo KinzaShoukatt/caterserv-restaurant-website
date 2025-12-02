@@ -5,22 +5,26 @@ import ThirdImage from "../../assets/images/imgi_31_blog-3.jpg";
 const Blog = () => {
   return (
     <>
-      <div className="p-25 flex flex-col justify-center">
-        <div className="text-center">
-          <button className="bg-[#FFFCF8] font-sans text-[#050709] text-[14px] font-bold border border-[#D4A762] py-1 px-7 rounded-2xl">
+      <div className="p-5 flex flex-col justify-center md:p-10 lg:p-25">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-delay="0"
+          className="animate-multiBounce text-center"
+        >
+          <button className="bg-[#FFFCF8] font-sans text-[#050709] text-[14px] font-medium border border-[#D4A762] py-1 px-7 rounded-2xl lg:font-bold">
             OUR BLOG
           </button>
-          <p className="playball text-black text-5xl pt-6 pb-10">
+          <p className="playball text-black text-3xl pt-6 pb-10 md:text-4xl lg:text-5xl">
             Be First Who Read News
           </p>
         </div>
-        <div className="flex gap-5">
-          <div>
+        <div className="grid grid-cols-1 gap-5 md:place-items-center md:grid-cols-2 lg:grid-cols-3">
+          <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
             <div className="rounded-lg overflow-hidden">
               <img
                 className="rounded-lg transition-transform duration-800 ease-in-out hover:scale-130"
                 src={FirstImage}
-                alt=""
               />
             </div>
             <div className=" transform translate-y-[-50%] rounded-lg flex mx-5">
@@ -33,7 +37,7 @@ const Blog = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="400">
             <div className="rounded-lg overflow-hidden">
               <img
                 className="rounded-lg transition-transform duration-800 ease-in-out hover:scale-130"
@@ -51,7 +55,7 @@ const Blog = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="600">
             <div className="rounded-lg overflow-hidden">
               <img
                 className="rounded-lg transition-transform duration-800 ease-in-out hover:scale-130"

@@ -8,10 +8,15 @@ import Sixthimage from "../../assets/images/imgi_18_menu-08.jpg";
 const Footer = () => {
   return (
     <>
-      <div className="bg-[#FFFCF8] p-25 flex justify-between gap-2.5 w-full">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-delay="300"
+        className="animate-multiBounce bg-[#FFFCF8] px-10 py-20 grid grid-cols-1 justify-between gap-2.5 w-full sm:grid-cols-2 lg:grid-cols-4 lg:p-25"
+      >
         {/* first */}
-        <div className="w-1/4">
-          <p className="playball text-[40px]">
+        <div>
+          <p className="playball text-3xl lg:text-[40px]">
             <span className="text-[#d4a762]">Cater</span>Serv
           </p>
           <p className="text-[#9A9A9A] leading-8 pb-2.5">
@@ -34,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
         {/* second */}
-        <div className="w-1/4">
+        <div>
           <p className="text-2xl font-semibold pb-2.5">Special Facilities</p>
           <div className="flex gap-2.5 items-center py-1 cursor-pointer">
             <i className="fa fa-check text-[#D4A762]"></i>
@@ -56,7 +61,7 @@ const Footer = () => {
           </div>
         </div>
         {/* third */}
-        <div className="w-1/4">
+        <div>
           <p className="text-2xl font-semibold pb-2.5">Contact Us</p>
           <div className="flex gap-2.5 items-center py-1">
             <i className="fa fa-map-marker-alt text-[#D4A762]"></i>
@@ -76,7 +81,7 @@ const Footer = () => {
           </div>
         </div>
         {/* last */}
-        <div className="w-1/4">
+        <div>
           <p className="text-2xl font-semibold pb-2.5">Social Gallery</p>
           <div className="grid grid-cols-3 gap-2">
             <div>
@@ -118,7 +123,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-black px-25 py-6 text-white flex items-center justify-between">
+      <div className="bg-black px-5 py-6 text-white flex flex-col gap-2.5 items-center justify-between text-sm md:text-[16px] md:flex-row lg:px-25">
         <div className="flex gap-2.5 items-center">
           <i className="fas fa-copyright text-white"></i>
           <p>

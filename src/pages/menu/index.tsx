@@ -232,15 +232,20 @@ const Menu = () => {
   };
   return (
     <>
-      <div className="bg-[#FFFCF8] px-25 py-25 flex flex-col justify-center">
-        <div className="text-center">
-          <button className="bg-[#FFFCF8] font-sans text-[#050709] text-[14px] font-bold border border-[#D4A762] py-1 px-7 rounded-2xl">
+      <div className="bg-[#FFFCF8] px-5 py-25 flex flex-col justify-center md:px-10 lg:px-25">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-delay="0"
+          className="animate-multiBounce text-center"
+        >
+          <button className="bg-[#FFFCF8] font-sans text-[#050709] text-[14px] font-medium border border-[#D4A762] py-1 px-7 rounded-2xl lg:font-bold">
             OUR MENU
           </button>
-          <p className="playball text-black text-5xl pt-6 pb-4">
+          <p className="playball text-black text-3xl pt-6 pb-4 md:text-4xl lg:text-5xl">
             Most Popular Food in the World
           </p>
-          <div className="flex gap-10 font-sans justify-center py-10">
+          <div className="grid grid-cols-1 w-fit gap-4 font-sans mx-auto items-center justify-center py-10 md:grid-cols-3 lg:grid-cols-5">
             <button
               onClick={() => setSelectedCategory("starter")}
               className={`border border-[#D4A762] py-2 px-9 rounded-4xl cursor-pointer ${
@@ -283,12 +288,20 @@ const Menu = () => {
             </button>
           </div>
         </div>
-        <div className="p-5 grid grid-cols-2 gap-5 relative">
-          {getMenuItems().map((card) => (
-            <div key={card.id}>
+        <div className="grid grid-cols-1 gap-5 relative lg:grid-cols-2 lg:p-5">
+          {getMenuItems().map((card, i) => (
+            <div
+              key={card.id}
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-delay={(i + 2) * (i + 1)}
+              className="animate-multiBounce"
+            >
               <div className="flex gap-5">
-                <img className="rounded-[50%]" src={card.img} alt="" />
-                <div>
+                <div className="w-2/5 md:w-auto">
+                  <img className="rounded-[50%]" src={card.img} alt="" />
+                </div>
+                <div className="w-3/5 md:w-auto">
                   <div className="flex justify-between font-sans text-2xl font-semibold pb-3.5 border-b border-dashed border-b-[#d4a762]">
                     <p>{card.text}</p>
                     <p className="text-[#d4a762]">$90</p>
